@@ -1,6 +1,5 @@
 all: main
 
 main: main.c
-	gcc -Wall main.c -o app -lm
-run:
-	./app example
+	gcc -Wall -Werror main.c -o main -lm
+
