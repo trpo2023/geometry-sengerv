@@ -1,5 +1,5 @@
 all: main
 
-main: main.c
-	gcc -Wall -Werror main.c -o main -lm
+main: main1.c
+	gcc -Wall -Werror main1.c -o main -lm
 
