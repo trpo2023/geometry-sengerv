@@ -50,11 +50,11 @@ CTEST(TEST_is_double, simple_double)
 
 CTEST(TEST_is_prefix, simple_prefix)
 {
-    char str[] = "Super text";
-    ASSERT_EQUAL(0, is_prefix(str, "Super"));
-    ASSERT_EQUAL(0, is_prefix(str + 6, "text"));
+    char str[] = "Round rect";
+    ASSERT_EQUAL(0, is_prefix(str, "Round"));
+    ASSERT_EQUAL(0, is_prefix(str + 6, "rect"));
     ASSERT_EQUAL(
-            ERROR_PARSER_UNEXPECTED_TOKEN, is_prefix(str, "not Super text"));
+            ERROR_PARSER_UNEXPECTED_TOKEN, is_prefix(str, "not Round rect"));
 }
 
 CTEST(TEST_is_num_circle, simple_num_circle)
